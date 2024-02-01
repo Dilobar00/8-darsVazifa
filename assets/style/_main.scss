@@ -1,0 +1,132 @@
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-image: url("../img/bg-weather.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  
+    .container {
+      position: relative;
+      header {
+        position: absolute;
+        left: 10rem;
+        top: 100px;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .main__left-section {
+        position: absolute;
+        left: 10rem;
+        top: 40rem;
+        color: #fff;
+        display: flex;
+        align-items: end;
+        gap: 10px;
+  
+        .main__left_title {
+          font-size: 140px;
+          margin-bottom: -25px;
+          margin-left: -10px;
+        }
+        span {
+          width: 220px;
+          h1 {
+            font-size: 56px;
+          }
+          p {
+            color: #eeeeee88;
+          }
+        }
+      }
+    }
+    .main_right {
+      backdrop-filter: blur(9.5px);
+      flex: 0.4;
+      border-left: 5px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.04);
+      padding-top: 100px;
+  
+      .main__section {
+        margin: 0 80px;
+        color: #fff;
+        border-bottom: 1px solid #eee;
+  
+        padding-bottom: 5rem;
+  
+        .search {
+          z-index: 10;
+          border-bottom: 1px solid #fff;
+          input {
+            background: transparent;
+            width: 100%;
+            outline: none;
+            border: none;
+            padding: 10px 0;
+            font-size: 20px;
+            color: #fff;
+          }
+          button {
+            padding: 10px;
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            font-size: 40px;
+            cursor: pointer;
+          }
+        }
+  
+        .section__title {
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 3px;
+          padding: 30px 0;
+        }
+        h3 {
+          font-size: 18px;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+        .temp {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          p {
+            padding: 30px 0;
+            color: #ffffff73;
+          }
+          span {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+      .main__section {
+        margin: 0 100px;
+        padding: 3rem 0;
+        color: #fff;
+        .snow {
+          padding: 10px 0;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+  
+          .snow__ {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  
+  @import "./media.scss";
+  
